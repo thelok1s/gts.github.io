@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZ0VHD6HEY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CZ0VHD6HEY');
+  </script>
+</head>
+
+<body>
+<h1>Google Analytics Event Tracking</h1>
+<p>Interact with the elements below to generate events for tracking.</p>
+
+<!-- Button 1 -->
+<button onclick="trackEvent('click', 'Button', 'Test Button 1')">Test Button 1</button>
+
+<!-- Button 2 -->
+<button onclick="trackEvent('click', 'Button', 'Test Button 2')">Test Button 2</button>
+
+<!-- Link -->
+<a href="https://www.google.com" target="_blank" onclick="trackEvent('click', 'Link', 'Google Link')">Go to Google</a>
+
+<!-- Form -->
+<form onsubmit="trackEvent('submit', 'Form', 'Test Form'); alert('Form submitted!'); return false;">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="/page1" onclick="trackEvent('click', 'Navigation', 'Page 1')">Page 1</a></li>
+    <li><a href="/page2" onclick="trackEvent('click', 'Navigation', 'Page 2')">Page 2</a></li>
+    <li><a href="/page3" onclick="trackEvent('click', 'Navigation', 'Page 3')">Page 3</a></li>
+  </ul>
+</nav>
+
+<footer>
+  <p>Hosted on Apache Server</p>
+</footer>
+</body>
+
+</html>
